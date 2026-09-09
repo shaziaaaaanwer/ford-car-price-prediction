@@ -95,7 +95,17 @@ The models were evaluated using:
 - Root Mean Squared Error (RMSE)
 - R² Score
 
-The Random Forest model performed substantially better than the Linear Regression baseline.
+### Final Random Forest Model
+
+| Metric | Score |
+|---|---:|
+| MAE | £836.58 |
+| RMSE | £1,269.55 |
+| R² Score | 0.9286 |
+
+The final Random Forest model was selected after hyperparameter tuning using RandomizedSearchCV with 5-fold cross-validation.
+
+The model achieved an R² score of 0.9286 on the test set, meaning it explains approximately 92.86% of the variation in car prices in the test data.
 
 ## Feature Importance
 
